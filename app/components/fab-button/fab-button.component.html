@@ -1,0 +1,7 @@
+<StackLayout class="fab-button" (tap)="onButtonTap($event)">
+    <GridLayout rows="2, auto" horizontalAlignment="center" class="fab-icon"
+        [class.iconActive]="isActive" [class.iconIdle]="!isActive">
+        <Label row="1" class="fab-dash--1"></Label>
+        <Label row="1" class="fab-dash--2"></Label>
+    </GridLayout>
+</StackLayout>

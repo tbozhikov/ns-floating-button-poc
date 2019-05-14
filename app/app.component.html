@@ -1,0 +1,15 @@
+<ActionBar title="Floating things"></ActionBar>
+<GridLayout rows="auto, *" (loaded)="onLoaded()" verticalAlignment="stretch">
+    <StackLayout row="0" verticalAlignment="center">
+        <Label margin="10" text="The floating is done using a GridLayout (#fabItemContainer)" textWrap="true"></Label>
+        <Label margin="10" text="Now click in the text field at the bottom to enter text..." textWrap="true"></Label>
+    </StackLayout>
+    
+    <StackLayout row="1" verticalAlignment="bottom">
+        <TextField height="50" class="text-input" hint="Enter some value" verticalAlignment="bottom"></TextField>
+        <TextField height="50" class="text-input" hint="Enter some value" verticalAlignment="bottom"></TextField>
+    </StackLayout>
+    <GridLayout #fabItemContainer rowSpan="2" verticalAlignment="bottom" marginBottom="5%" marginLeft="70%">
+        <FabButton (buttonTap)="onButtonTap($event)" [isActive]="isActive"></FabButton>
+    </GridLayout>
+</GridLayout>

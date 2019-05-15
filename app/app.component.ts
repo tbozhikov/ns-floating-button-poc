@@ -1,7 +1,10 @@
-import { Component, ElementRef, ViewChild } from "@angular/core";
+import { Component, ElementRef, ViewChild, OnInit } from "@angular/core";
 import { isIOS } from 'tns-core-modules/platform';
+// import { android } from "tns-core-modules/application/application";
+import { Page } from "tns-core-modules/ui/page/page";
 
 declare const IQKeyboardManager: any;
+declare const android: any;
 
 @Component({
     selector: "ns-app",
